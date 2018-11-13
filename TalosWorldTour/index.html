@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="generateArrangers.js"></script>
+    <script type="text/javascript" src="randomizeSigils.js"></script>
+</head>
+<body>
+    <h1 id="title">Talos World Tour Generator</h1>
+    <div id="container">
+        <table id="sigils"></table>
+        <table id="selected"></table>
+        <div id="arrangers">
+            <div>
+                <div id="A1Gate"></div>
+                <div id="AGate"></div>
+                <div id="BGate"></div>
+                <div id="CGate"></div>
+            </div><div>
+                <div id="Connector"></div>
+                <div id="Cube"></div>
+                <div id="Fan"></div>
+                <div id="Recorder"></div>
+                <div id="Platform"></div>
+            </div><div>
+                <div id="F1"></div>
+                <div id="F2"></div>
+                <div id="F3"></div>
+                <div id="F4"></div>
+                <div id="F5"></div>
+            </div><div>
+                <div id="AStar"></div>
+                <div id="BStar"></div>
+                <div id="CStar"></div>
+                <div id="F6"></div>
+            </div>
+        </div>
+    </div>
+    <div id="inputs">
+        <input id="seed" type="number" min="0" max="2147483647" placeholder="Seed"></input>
+        <input type="submit" value="Regenerate" onclick="newSeed()"></input>
+    </div>
+</body>
