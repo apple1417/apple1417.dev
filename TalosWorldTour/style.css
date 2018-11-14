@@ -20,17 +20,17 @@ td.top {border-top: 1px solid;}
 td.right {border-right: 1px solid;}
 td.bottom {border-bottom: 1px solid;}
 
-.star {background-color: #FDCB9C;}
-.green {background-color: #B7E1CD;}
-.grey {background-color: #D9D9D9;}
-.yellow {background-color: #FCE8B2;}
-.red {background-color: #F4C7C3;}
+.star {background-color: orange;}
+.green {background-color: olivedrab;}
+.grey {background-color: darkgrey;}
+.yellow {background-color: gold;}
+.red {background-color: red;}
 
-td.full_star {background-color: #ff7f00;}
-td.full_green {background-color: #00FF00;}
-td.full_grey {background-color: #9D9D9D;}
-td.full_yellow {background-color: #FFFF00;}
-td.full_red {background-color: #FF0000;}
+td.full_star {background-color: chocolate;}
+td.full_green {background-color: darkgreen;}
+td.full_grey {background-color: dimgrey;}
+td.full_yellow {background-color: darkgoldenrod;}
+td.full_red {background-color: darkred;}
 
 .sigil {
     border: 1px solid;
@@ -42,7 +42,15 @@ td.full_red {background-color: #FF0000;}
     cursor: pointer;
 }
 
-#sigils {border: 1px solid;}
+.highlight {
+    z-index: 2;
+}
+
+#sigils {
+    border: 1px solid;
+    white-space: nowrap;
+    background-color: #FFFFFF;
+}
 #sigils th {
     border: 1px solid;
     height: 1.75em;
@@ -52,11 +60,13 @@ td.full_red {background-color: #FF0000;}
 
 #selected {
     margin-right: 0.8em;
+    background-color: #FFFFFF;
 }
 
 #container {
     display: flex;
-    justify-content: center;
+    justify-content: safe center;
+    min-width: min-content;
 }
 
 #title {
@@ -73,12 +83,54 @@ td.full_red {background-color: #FF0000;}
 #arrangers {
     display: flex;
     position: relative;
-    top: -7px;
+    top: -6px;
+    background-color: #FFFFFF;
 }
 #arrangers div {
     margin: 0.2em;
 }
 #arrangers div table {
     margin: 0.4em auto;
-    position: relative;
+}
+
+#seedDisplay {
+    font-size: 0.8em;
+    color: #767676;
+}
+
+#darkBackground {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.5;
+    display: none;
+}
+
+#help {
+    z-index: 3;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    width: 20em;
+    background-color: #FFFFFF;
+    border: 1px solid;
+    padding: 0.5em;
+    display: none;
+}
+#helpProgress {
+    text-align: center;
+}
+#previous, #next {
+    width: 5em;
+}
+#helpButton {
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    padding-left: 0.375em;
+    padding-right: 0.375em
 }

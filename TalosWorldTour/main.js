@@ -9,11 +9,17 @@ function setup() {
     } else {
         seed = parseInt(cookie[1]);
     }
+    document.getElementById("seedDisplay").innerHTML = "Currently: " + seed;
+    // Simulate the extra rng calls that happen before sigils are actually randomized
+    for (var i = 0; i < 6; i++) {
+        rand(0, 0);
+    }
+
 
     var table = ``;
-    for (var world in worldSigilCount) {
-        table += `<tr><td id="` + world +`" onclick="deselectSigil('`
-                 + world + `')" class="sigil"></td></tr>\n`;
+    for (var i = 0; i < worlds.length; i++) {
+        table += `<tr><td id="` + worlds[i] +`" onclick="deselectSigil('`
+                 + worlds[i] + `')" class="sigil"></td></tr>\n`;
     }
     document.getElementById("selected").innerHTML = table;
 
@@ -22,7 +28,7 @@ function setup() {
 }
 
 function rand(min, max) {
-    seed = (214013 * seed + 2531011) % 0x7fffffff;
+    seed = (214013 * seed + 2531011) % 0x80000000;
     if (min == max) return min;
     return (seed % (max - (min - 1))) + min;
 }
@@ -41,8 +47,18 @@ function newSeed() {
     } else {
         seed = parseInt(seedText);
     }
+    document.getElementById("seedDisplay").innerHTML = "Currently: " + seed;
     saveSeed();
+    generateArrangers();
     randomize();
+
+    inventory = {
+        st: 0,
+        DI: 0, DJ: 0, DL: 0, DT: 0, DZ: 0,
+        EL: 0, EO: 0, ES: 0,
+        MI: 0, MJ: 0, ML: 0, MO: 0, MS: 0, MT: 0, MZ: 0,
+        NI: 0, NJ: 0, NL: 0, NO: 0, NS: 0, NT: 0, NZ: 0
+    };
 }
 
 inventory = {
@@ -69,7 +85,6 @@ function placeSigil(sigil, arranger) {
             cells[i].classList.remove(colour);
         }
         inventory[sigil.substring(0, 2)]++;
-        arrangerSigilCount[arranger]--;
     // Select sigil
     } else {
         if (inventory[sigil.substring(0, 2)] > 0) {
@@ -77,7 +92,6 @@ function placeSigil(sigil, arranger) {
                 cells[i].classList.add(colour);
             }
             inventory[sigil.substring(0, 2)]--;
-            arrangerSigilCount[arranger]++;
         }
     }
 }

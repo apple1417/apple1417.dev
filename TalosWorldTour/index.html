@@ -6,8 +6,18 @@
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="generateArrangers.js"></script>
     <script type="text/javascript" src="randomizeSigils.js"></script>
+    <script type="text/javascript" src="help.js"></script>
 </head>
 <body>
+    <div id="darkBackground"></div>
+    <div id="help">
+        <div id="helpText"></div>
+        <div id="helpProgress">
+            <input id="previous" type="submit" value="Previous" onclick="help(-1)"></input>
+            <input id="next" type="submit" value="Next" onclick="help(1)"></input>
+        </div>
+    </div>
+    <input id="helpButton" type="submit" value="?" onclick="help(0)"></input>
     <h1 id="title">Talos World Tour Generator</h1>
     <div id="container">
         <table id="sigils"></table>
@@ -41,5 +51,7 @@
     <div id="inputs">
         <input id="seed" type="number" min="0" max="2147483647" placeholder="Seed"></input>
         <input type="submit" value="Regenerate" onclick="newSeed()"></input>
+        <br>
+        <span id="seedDisplay"></span>
     </div>
 </body>
