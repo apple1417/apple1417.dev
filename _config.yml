@@ -1,3 +1,2 @@
-repository: apple1417/apple1417.github.io
 plugins:
   - jekyll-redirect-from
