@@ -49,6 +49,12 @@ function newSeed() {
     }
     document.getElementById("seedDisplay").innerHTML = "Currently: " + seed;
     saveSeed();
+
+    // Simulate the extra rng calls that happen before sigils are actually randomized
+    for (var i = 0; i < 6; i++) {
+        rand(0, 0);
+    }
+
     generateArrangers();
     randomize();
 
