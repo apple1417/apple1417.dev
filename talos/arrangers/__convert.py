@@ -6,7 +6,7 @@ from shutil import move
 from sys import stdin
 
 INDENT = 4
-RE_HEADER = re.compile(r"Challenge \"(.*?)\".*?cost: (\d+).*?Found (\d+) solutions:", re.S)
+RE_HEADER = re.compile(r"Challenge \"(.*?)\".*?cost: ([\d.]+).*?Found (\d+) solutions:", re.S)
 RE_ARRANGER = re.compile(r"([\d.]+)[\n\r]+([+\-|\s]+?)(?=\d|Challenge)")
 # This the size from the var in darkid's script, each block is 2*SIZE-1 wide and SIZE-1 tall not
 #  including the edges
@@ -76,6 +76,7 @@ for line in stdin:
         arranger_name = match.group(1)
         arranger_cost = match.group(2)
         arranger_count = int(match.group(3))
+        print("Starting " + arranger_name)
 
         # Setup the object for this arranger, and maybe finish the one for the last
         if first_arranger:

@@ -4,11 +4,10 @@ table, th, td {
 }
 
 td.left, td.top, td.right, td.bottom {
-    cursor: pointer;
-    min-width: 1.25em;
-    width: 1.25em;
-    min-height: 1.25em;
-    height: 1.25em;
+    min-width: 1em;
+    width: 1em;
+    min-height: 1em;
+    height: 1em;
 }
 td.left {border-left: 1px solid;}
 td.top {border-top: 1px solid;}
