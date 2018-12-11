@@ -2,19 +2,17 @@ window.addEventListener("load", setup);
 
 seed = Math.floor(Math.random() * 0x7fffffff);
 function setup() {
-    // Want to store seed in a cookie so refreshing gives the same puzzle
-    var cookie = document.cookie.match(/seed=(\d+)/);
-    if (cookie == null) {
-        saveSeed();
+    // Want to store seed so refreshing gives the same puzzle
+    if (localStorage.seed == null) {
+        localStorage.seed = seed;
     } else {
-        seed = parseInt(cookie[1]);
+        seed = localStorage.seed;
     }
     document.getElementById("seedDisplay").innerHTML = "Currently: " + seed;
     // Simulate the extra rng calls that happen before sigils are actually randomized
     for (var i = 0; i < 6; i++) {
         rand(0, 0);
     }
-
 
     var table = ``;
     for (var i = 0; i < worlds.length; i++) {
@@ -33,13 +31,6 @@ function rand(min, max) {
     return (seed % (max - (min - 1))) + min;
 }
 
-function saveSeed() {
-    document.cookie = "seed=0; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-    var d = new Date();
-    d.setTime(d.getTime() + (24*60*60*1000));
-    document.cookie = "seed=" + seed + "; expires=" + d.toUTCString() + ";path=/";
-}
-
 function newSeed() {
     seedText = document.getElementById("seed").value;
     if (seedText == "") {
@@ -48,7 +39,7 @@ function newSeed() {
         seed = parseInt(seedText);
     }
     document.getElementById("seedDisplay").innerHTML = "Currently: " + seed;
-    saveSeed();
+    localStorage.seed = seed;
 
     // Simulate the extra rng calls that happen before sigils are actually randomized
     for (var i = 0; i < 6; i++) {
