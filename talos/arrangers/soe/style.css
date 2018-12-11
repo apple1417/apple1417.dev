@@ -1,0 +1,89 @@
+body {
+    text-align: center;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    margin: 0.2em auto;
+    padding-left: 0.2em;
+    padding-right: 0.1em;
+}
+
+
+table.green {background-color: olivedrab;}
+table.yellow {background-color: gold;}
+table.red {background-color: red;}
+table.blue {background-color: cyan;}
+
+table.pointer {
+    cursor: pointer;
+}
+
+td.left, td.top, td.right, td.bottom {
+    min-width: 0.75em;
+    width: 0.75em;
+    min-height: 0.75em;
+    height: 0.75em;
+}
+td.left {border-left: 1px solid;}
+td.top {border-top: 1px solid;}
+td.right {border-right: 1px solid;}
+td.bottom {border-bottom: 1px solid;}
+
+.flex {
+    display: flex;
+}
+.hidden {
+    display: none;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+
+#overlay {
+    z-index: 2;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #FFFFFF;
+    border: 1px solid;
+
+    max-width: 95%;
+    max-height: 95%;
+    overflow-y: auto;
+    padding: 0.2em;
+
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#overlay table {
+    margin: 0.2em;
+}
+#darkBackground {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.5;
+}
+
+#puzzleParent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#selectA, #selectB, #selectC {
+    font-size: 7em;
+    cursor: pointer;
+    margin: 1em;
+}

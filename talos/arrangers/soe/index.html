@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+</head>
+<body>
+    <div id="darkBackground" class="hidden" onclick="hideFull()"></div>
+    <div id="overlay" class="hidden"></div>
+    <span id="selectA" onclick="changeHub('A');">A</span>&nbsp;
+    <span id="selectB" onclick="changeHub('B');">B</span>&nbsp;
+    <span id="selectC" onclick="changeHub('C');">C</span>
+    <div id="puzzleParent">
+        <table id="A" class="hidden"><tr>
+            <td id="A_Blue_1" class="blue"></td>
+            <td id="A_Blue_2" class="blue"></td>
+            <td id="A_Blue_3" class="blue"></td>
+            <td id="A_Blue_4" class="blue"></td>
+            <td id="A_Blue_5" class="blue"></td>
+            <td id="A_Blue_6" class="blue"></td>
+            <td id="A_Blue_7" class="blue"></td>
+            <td id="A_Blue_8" class="blue"></td>
+        </tr><tr>
+            <td id="A_Green_1" class="green"></td>
+            <td id="A_Green_2" class="green"></td>
+            <td id="A_Green_3" class="green"></td>
+            <td id="A_Green_4" class="green"></td>
+            <td id="A_Green_5" class="green"></td>
+            <td id="A_Green_6" class="green"></td>
+            <td id="A_Green_7" class="green"></td>
+            <td id="A_Green_8" class="green"></td>
+        </tr><tr>
+            <td id="A_Yellow_1" class="yellow"></td>
+            <td id="A_Yellow_2" class="yellow"></td>
+            <td id="A_Yellow_3" class="yellow"></td>
+            <td id="A_Yellow_4" class="yellow"></td>
+            <td id="A_Yellow_5" class="yellow"></td>
+            <td id="A_Yellow_6" class="yellow"></td>
+            <td id="A_Yellow_7" class="yellow"></td>
+            <td id="A_Yellow_8" class="yellow"></td>
+        </tr><tr>
+            <td id="A_Red_1" class="red"></td>
+            <td id="A_Red_2" class="red"></td>
+            <td id="A_Red_3" class="red"></td>
+            <td id="A_Red_4" class="red"></td>
+            <td id="A_Red_5" class="red"></td>
+            <td id="A_Red_6" class="red"></td>
+            <td id="A_Red_7" class="red"></td>
+            <td id="A_Red_8" class="red"></td>
+        </table>
+        <table id="B" class="hidden"><tr>
+            <td id="B_Blue_1" class="blue"></td>
+            <td id="B_Blue_2" class="blue"></td>
+            <td id="B_Blue_3" class="blue"></td>
+            <td id="B_Blue_4" class="blue"></td>
+            <td id="B_Blue_5" class="blue"></td>
+            <td id="B_Blue_6" class="blue"></td>
+            <td id="B_Blue_7" class="blue"></td>
+            <td id="B_Blue_8" class="blue"></td>
+        </tr><tr>
+            <td id="B_Green_1" class="green"></td>
+            <td id="B_Green_2" class="green"></td>
+            <td id="B_Green_3" class="green"></td>
+            <td id="B_Green_4" class="green"></td>
+            <td id="B_Green_5" class="green"></td>
+            <td id="B_Green_6" class="green"></td>
+            <td id="B_Green_7" class="green"></td>
+            <td id="B_Green_8" class="green"></td>
+        </tr><tr>
+            <td id="B_Yellow_1" class="yellow"></td>
+            <td id="B_Yellow_2" class="yellow"></td>
+            <td id="B_Yellow_3" class="yellow"></td>
+            <td id="B_Yellow_4" class="yellow"></td>
+            <td id="B_Yellow_5" class="yellow"></td>
+            <td id="B_Yellow_6" class="yellow"></td>
+            <td id="B_Yellow_7" class="yellow"></td>
+            <td id="B_Yellow_8" class="yellow"></td>
+        </tr><tr>
+            <td id="B_Red_1" class="red"></td>
+            <td id="B_Red_2" class="red"></td>
+            <td id="B_Red_3" class="red"></td>
+            <td id="B_Red_4" class="red"></td>
+            <td id="B_Red_5" class="red"></td>
+            <td id="B_Red_6" class="red"></td>
+            <td id="B_Red_7" class="red"></td>
+            <td id="B_Red_8" class="red"></td>
+        </table>
+        <table id="C" class="hidden"><tr>
+            <td id="C_Blue_1" class="blue"></td>
+            <td id="C_Blue_2" class="blue"></td>
+            <td id="C_Blue_3" class="blue"></td>
+            <td id="C_Blue_4" class="blue"></td>
+            <td id="C_Blue_5" class="blue"></td>
+            <td id="C_Blue_6" class="blue"></td>
+            <td id="C_Blue_7" class="blue"></td>
+            <td id="C_Blue_8" class="blue"></td>
+        </tr><tr>
+            <td id="C_Green_1" class="green"></td>
+            <td id="C_Green_2" class="green"></td>
+            <td id="C_Green_3" class="green"></td>
+            <td id="C_Green_4" class="green"></td>
+            <td id="C_Green_5" class="green"></td>
+            <td id="C_Green_6" class="green"></td>
+            <td id="C_Green_7" class="green"></td>
+            <td id="C_Green_8" class="green"></td>
+        </tr><tr>
+            <td id="C_Yellow_1" class="yellow"></td>
+            <td id="C_Yellow_2" class="yellow"></td>
+            <td id="C_Yellow_3" class="yellow"></td>
+            <td id="C_Yellow_4" class="yellow"></td>
+            <td id="C_Yellow_5" class="yellow"></td>
+            <td id="C_Yellow_6" class="yellow"></td>
+            <td id="C_Yellow_7" class="yellow"></td>
+            <td id="C_Yellow_8" class="yellow"></td>
+        </tr><tr>
+            <td id="C_Red_1" class="red"></td>
+            <td id="C_Red_2" class="red"></td>
+            <td id="C_Red_3" class="red"></td>
+            <td id="C_Red_4" class="red"></td>
+            <td id="C_Red_5" class="red"></td>
+            <td id="C_Red_6" class="red"></td>
+            <td id="C_Red_7" class="red"></td>
+            <td id="C_Red_8" class="red"></td>
+        </table>
+    </div>
+    <br>
+    <button onclick="defaultSettings();">Reset Everything</button>
+</body>

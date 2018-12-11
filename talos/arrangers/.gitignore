@@ -1,6 +1,10 @@
 # Get this from here, it's probably more up to date:
 # https://github.com/jbzdarkid/Random/blob/master/tetrominos.py
+# Modifications are:
+#  Remove the max solutions limit - use `solve(challenges, 16)`
+#  Add `print("Challenge")`` to the very end of the script (for regex)
+#  Change which arrangers are uncommented as needed
 __tetrominos.py
 
-data.js.bak
+*.bak
 __*.js

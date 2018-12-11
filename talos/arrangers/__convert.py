@@ -2,22 +2,25 @@
 # Rather than try to work out how darkid's script works and edit it's output, I just read pipe the
 #  output into this and parse it
 import re
-from shutil import move
-from sys import stdin
+import shutil
+import sys
 
 INDENT = 4
-RE_HEADER = re.compile(r"Challenge \"(.*?)\".*?cost: ([\d.]+).*?Found (\d+) solutions:", re.S)
+RE_HEADER = re.compile(r"Challenge \"([^\"]*?)\"[^\"]*?cost: ([\d.]+)[\n\r]+Found (\d+) solutions:", re.S)
 RE_ARRANGER = re.compile(r"([\d.]+)[\n\r]+([+\-|\s]+?)(?=\d|Challenge)")
 # This the size from the var in darkid's script, each block is 2*SIZE-1 wide and SIZE-1 tall not
 #  including the edges
 SIZE = 4
 
 # Just incase you do something wrong keep a backup
+file_name = "data.js"
+if len(sys.argv) > 1:
+    file_name = sys.argv[1]
 try:
-    move("data.js", "data.js.bak")
+    shutil.move(file_name, file_name + ".bak")
 except:
     pass
-file = open("data.js", "w")
+file = open(file_name, "w")
 file.write("data = {\n")
 
 current_data = ""
@@ -66,7 +69,7 @@ def parseArranger(dump):
     file.write("\n")
 
 # This converts piped in input from darkid's script into the vars we need to parse it
-for line in stdin:
+for line in sys.stdin:
     current_data += line
     if arranger_count == 0:
         match = RE_HEADER.match(current_data)
