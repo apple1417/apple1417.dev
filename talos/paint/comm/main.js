@@ -2,14 +2,14 @@
 versionInfo = {
     "244": [{
         world: "A3",
-        order: ["A3-SfL", "A3-AEP", "A3-LMUStK", "A3-Statue", "A3-Altar"]
+        order: ["A3-AEP", "A3-LMUStK", "A3-Statue", "A3-Altar", "A3-SfL"]
     }, {
         world: "B1",
         order: ["B1-WtaD", "B1-Spawn", "B1-RoD"]
     }],
     "326": [{
         world: "A3",
-        order: ["A3-LMUStK", "A3-Altar", "A3-AEP", "A3-Statue", "A3-SfL"]
+        order: ["A3-SfL", "A3-AEP", "A3-LMUStK", "A3-Statue", "A3-Altar"]
     }, {
         world: "B1",
         order: ["B1-RoD", "B1-WtaD", "B1-Spawn"]
