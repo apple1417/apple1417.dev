@@ -1,14 +1,9 @@
+/* More minimal version of https://github.com/apple1417/bl2parts/blob/master/style.css */
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 :root {
     --main-text-colour: #e7e8e9;
-    --main-footnote-colour: #999999;
-    --main-border-style: 1px solid rgba(255, 255, 255, 0.5);
-
-    --img-size-small: 5.25em;
-    --img-size-med: 8.875em;
-    --img-size-big: 12.5em;
-    --img-size-massive: 16.125em;
 }
 
 html {
@@ -35,16 +30,6 @@ th {
 }
 td {
     vertical-align: top;
-}
-table.internalBorder {
-    border-collapse: collapse;
-    border-style: hidden;
-}
-table.internalBorder td, table.internalBorder th {
-    border: var(--main-border-style);
-}
-table.verticalCenter tr td, tr.verticalCenter td, td.verticalCenter {
-    vertical-align: middle;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -74,92 +59,12 @@ a:visited {
     color: darkred;
 }
 
-img.small {
-    max-width: var(--img-size-small);
-    max-height: var(--img-size-small);
-}
-img.med {
-    max-width: var(--img-size-med);
-    max-height: var(--img-size-med);
-}
-img.big {
-    max-width: var(--img-size-big);
-    max-height: var(--img-size-big);
-}
-img.massive {
-    max-width: var(--img-size-massive);
-    max-height: var(--img-size-massive);
-}
 img.center {
     display: block;
     margin: 0 auto;
-}
-img.left {
-    float: left;
-}
-img.right {
-    float: right;
-}
-
-sup {
-    color: var(--main-footnote-colour);
-}
-
-.smallText, .footnotes {
-    font-size: 0.75em;
-}
-.footnotes sup {
-    display: inline-block;
-    position: relative;
-    left: -2em;
-    margin-right: -1.25em;
-    width: 1em;
-    text-align: right;
-}
-
-/* Workaround for small divide signs looking too similar to pluses */
-.smallText .divi::before {
-    content: "÷";
-    font-size: 1.1em;
-    font-style: italic;
 }
 
 .text {
     max-width: 50em;
     margin: 0 auto;
-}
-.text table {
-    max-width: 50em;
-}
-.text table, .text th, .text td {
-    text-align: left;
-}
-.bigText {
-    font-size: 1.5em;
-}
-
-.good {
-    color: lime;
-}
-.bad {
-    color: red;
-}
-
-.preAdd {
-    color: #ff0000;
-}
-.scale {
-    color: #ffff00;
-}
-.postAdd {
-    color: #00ffff;
-}
-.grade, .perGrade::after {
-    color: #ff00ff;
-}
-
-.perGrade::after {
-    content: "/g";
-    vertical-align: sub;
-    font-size: 0.83em;
 }
