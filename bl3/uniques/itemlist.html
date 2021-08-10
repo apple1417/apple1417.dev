@@ -9,11 +9,21 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootswatch@5/dist/darkly/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/jq-3.3.1/dt-1.10.25/b-1.7.1/b-colvis-1.7.1/sp-1.3.0/sl-1.3.3/datatables.min.css"/>
 
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/jq-3.3.1/dt-1.10.25/b-1.7.1/b-colvis-1.7.1/sp-1.3.0/sl-1.3.3/datatables.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="/bl3/uniques/style.css"/>
     <script type="text/javascript" src="/bl3/uniques/main.js"></script>
+    <script>
+        options.ajax = "/bl3/uniques/items.json";
+        options.columns.splice(2, 2);
+        options.columnDefs[0].targets = [0, 1];
+        options.columnDefs[0].width = "50%";
+        options.columnDefs[1].targets = [2, 4, 5, 6];
+        options.columnDefs[2].targets = 3;
+        options.searchPanes.columns = [2, 3, 4, 5, 6];
+    </script>
 </head>
 <body>
     <div class="container min-vh-100">
