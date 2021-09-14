@@ -2,15 +2,6 @@
 #table_filter *  {
     width: 100%;
 }
-#table_filter input {
-    border-color: var(--bs-secondary);
-    color: var(--bs-body-color);
-}
-/* Page length select */
-#table_length select {
-    border-color: var(--bs-secondary);
-    color: var(--bs-body-color);
-}
 /* Search pane selectors */
 div.dtsp-searchCont input {
     background-color: var(--bs-body-bg);
