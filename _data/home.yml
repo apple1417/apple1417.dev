@@ -1,0 +1,32 @@
+navbar_entries:
+  - title: github
+    url: https://github.com/apple1417
+
+  - title: feed
+    url: feed.xml
+
+project_entries:
+  - title: unrealsdk
+    url: https://github.com/bl-sdk/unrealsdk
+    desc: A c++ library for interacting with unreal engine objects.
+    highlight: WIP
+
+  - title: bl2.parts
+    url: https://bl2.parts
+    desc: Parts guides for Borderlands 2 + TPS.
+
+  - title: OpenHotfixLoader
+    url: https://github.com/apple1417/OpenHotfixLoader
+    desc: Proxyless Hotfix Injector for Borderlands 3 and Wonderlands
+
+  - title: Bagpipe
+    url: https://github.com/apple1417/bagpipe
+    desc: Universal profile editor for all Borderlands games before 3.
+
+  - title: BL2 Mods
+    url: https://github.com/apple1417/bl-sdk-mods
+    desc: Various mods for BL2/TPS.
+
+  - title: Autosplitters
+    url: https://github.com/apple1417/Autosplitters
+    desc: Various livesplit autosplitters.

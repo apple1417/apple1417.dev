@@ -1,0 +1,48 @@
+---
+---
+
+@import "moonwalk";
+@import "list";
+// @import "syntax";
+
+// ================================
+
+@import "monokai";
+
+div.highlighter-rouge pre code, pre code.highlighter-rouge {
+    padding: 0;
+}
+.highlighter-rouge {
+    line-height: 1.2;
+
+    // Prevent theme switching text colour
+    table {
+        color: revert;
+    }
+
+    table, th, td {
+        border: none;
+        padding: 0 0.3rem;
+    }
+
+    td.rouge-gutter {
+        width: unset;
+    }
+    .lineno {
+        min-width: 1.3rem;
+        text-align: right;
+        user-select: none;
+        opacity: 0.5;
+    }
+
+    // No line number for plaintext
+    &.language-plaintext {
+        .lineno {
+            display: none;
+        }
+    }
+}
+
+body {
+    line-height: 1.5;
+}
