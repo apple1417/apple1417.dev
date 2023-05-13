@@ -18,6 +18,7 @@ div.highlighter-rouge pre code, pre code.highlighter-rouge {
     // Prevent theme switching text colour
     table {
         color: revert;
+        margin-left: unset;
     }
 
     table, th, td {
@@ -25,9 +26,6 @@ div.highlighter-rouge pre code, pre code.highlighter-rouge {
         padding: 0 0.3rem;
     }
 
-    td.rouge-gutter {
-        width: unset;
-    }
     .lineno {
         min-width: 1.3rem;
         text-align: right;
@@ -36,11 +34,18 @@ div.highlighter-rouge pre code, pre code.highlighter-rouge {
     }
 
     // No line number for plaintext
-    &.language-plaintext {
+    &.language-plaintext,
+    &.no-lineno  {
         .lineno {
             display: none;
         }
     }
+}
+
+table, th, td {
+    border-color: var(--text);
+    width: unset;
+    margin: 0 auto;
 }
 
 body {
