@@ -33,9 +33,7 @@ div.highlighter-rouge pre code, pre code.highlighter-rouge {
         opacity: 0.5;
     }
 
-    // No line number for plaintext
-    &.language-plaintext,
-    &.no-lineno  {
+    &.no-lineno {
         .lineno {
             display: none;
         }
