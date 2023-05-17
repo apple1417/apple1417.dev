@@ -2,6 +2,12 @@ navbar_entries:
   - title: github
     url: https://github.com/apple1417
 
+  - title: twitch
+    url: https://twitch.tv/apple1417
+
+  - title: youtube
+    url: https://youtube.com/@apple1417
+
   - title: feed
     url: feed.xml
 
@@ -17,7 +23,7 @@ project_entries:
 
   - title: OpenHotfixLoader
     url: https://github.com/apple1417/OpenHotfixLoader
-    desc: Proxyless Hotfix Injector for Borderlands 3 and Wonderlands
+    desc: Proxyless Hotfix Injector for Borderlands 3 and Wonderlands.
 
   - title: Bagpipe
     url: https://github.com/apple1417/bagpipe

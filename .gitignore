@@ -1,5 +1,9 @@
-_site/
+_site
+_drafts
+
+.vscode
+
 Gemfile
 Gemfile.lock
-.vscode
+
 .jekyll-metadata

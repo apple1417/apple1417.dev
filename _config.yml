@@ -51,6 +51,7 @@ kramdown:
 
 defaults:
   - scope:
-      path: "_posts"
+      path: ""
+      type: "posts"
     values:
       permalink: /posts/:year-:month-:day-:slug
