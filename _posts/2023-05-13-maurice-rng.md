@@ -1,5 +1,6 @@
 ---
 title: Why BL3's Maurice Vendor RNG Sucks
+description: How reasonable seeming code violated enough assumptions to completely nullify the RNG.
 latex: true
 ---
 
