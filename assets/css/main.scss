@@ -38,6 +38,14 @@ div.highlighter-rouge pre code, pre code.highlighter-rouge {
             display: none;
         }
     }
+
+    // Moonwalk uses a `w` class for the main page contents
+    // Rouge uses a `w` class for whitespace
+    .w {
+        max-width: unset;
+        margin: unset;
+        padding: unset;
+    }
 }
 
 table, th, td {
