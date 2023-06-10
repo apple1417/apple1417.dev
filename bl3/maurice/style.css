@@ -1,0 +1,20 @@
+.disabled-vendor {
+    opacity: 0.5;
+}
+
+.this-week > * {
+    background-color: rgba(0, 64, 64, 0.4) !important;
+}
+.this-week td:first-child::after {
+    content: " (Active)";
+    vertical-align: sub;
+    font-size: 0.7em;
+}
+
+#table_filter *  {
+    width: 100%;
+}
+
+#num-weeks {
+    flex-grow: 0.5;
+}

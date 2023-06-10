@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Maurice Vendor Predictior</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootswatch@5/dist/darkly/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/jq-3.3.1/dt-1.10.25/b-1.7.1/b-colvis-1.7.1/sp-1.3.0/sl-1.3.3/datatables.min.css"/>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/jq-3.3.1/dt-1.10.25/b-1.7.1/b-colvis-1.7.1/sp-1.3.0/sl-1.3.3/datatables.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/bl3/maurice/style.css"/>
+    <script type="text/javascript" src="/bl3/maurice/data.js"></script>
+    <script type="text/javascript" src="/bl3/maurice/main.js"></script>
+
+    <template id="date-template">
+        <div class="col-sm-12 col-md-3">
+            <div class="input-group input-group-sm">
+                <input id="start-date" class="form-control" type="date" min="2021-11-18"/>
+                <input id="num-weeks" class="form-control" type="number" min="1" value="52"/>
+                <button id="generate-btn" class="btn btn-primary" type="button">Generate</button>
+            </div>
+        </div>
+    </template>
+</head>
+<body>
+    <div class="container min-vh-100">
+        <div class="table-responsive-md pt-3 mh-100">
+            <table id="table" class="table table-hover table-striped"></table>
+        </div>
+    </div>
+</body>
