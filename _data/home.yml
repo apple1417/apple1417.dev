@@ -14,12 +14,22 @@ navbar_entries:
 project_entries:
   - title: unrealsdk
     url: https://github.com/bl-sdk/unrealsdk
-    desc: A c++ library for interacting with unreal engine objects.
+    desc: A C++ library for interacting with unreal engine objects.
+    highlight: WIP
+
+  - title: pyunrealsdk
+    url: https://github.com/bl-sdk/unrealsdk
+    desc: Python bindings and embedded interpreter for unrealsdk.
+    highlight: WIP
+
+  - title: BL3 Mod Manager
+    url: https://github.com/bl-sdk/oak-mod-manager
+    desc: Python mod manager and in game mod menu for Borderlands 3 and Wonderlands.
     highlight: WIP
 
   - title: bl2.parts
     url: https://bl2.parts
-    desc: Parts guides for Borderlands 2 + TPS.
+    desc: Parts guides for Borderlands 2 and TPS.
 
   - title: OpenHotfixLoader
     url: https://github.com/apple1417/OpenHotfixLoader
@@ -32,6 +42,10 @@ project_entries:
   - title: BL2 Mods
     url: https://github.com/apple1417/bl-sdk-mods
     desc: Various mods for BL2/TPS.
+
+  - title: BL3 Mods
+    url: https://github.com/apple1417/oak-sdk-mods
+    desc: Various mods for BL3/WL.
 
   - title: Autosplitters
     url: https://github.com/apple1417/Autosplitters
