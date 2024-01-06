@@ -18,3 +18,8 @@
 #num-weeks {
     flex-grow: 0.5;
 }
+
+table > :not(caption) > * > * {
+    color: var(--bs-body-color) !important;
+    background-color: rgba(0,0,0,0) !important;
+}
