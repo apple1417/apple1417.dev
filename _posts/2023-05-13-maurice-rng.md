@@ -4,6 +4,8 @@ description: How reasonable seeming code violated enough assumptions to complete
 latex: true
 ---
 
+Update 2023-06-11: I wrote an [online predictor available here](https://apple1417.dev/bl3/maurice/).
+
 Maurice's Black Market is a vendor which spawns in a random location each week, selling a selection
 of legendary items. Speedruns were using one particular week to get an overpowered gun, but there
 was a question hanging in the air: is there a week we can get it somewhere better? It turns out, no,
