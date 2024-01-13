@@ -57,3 +57,24 @@ table, th, td {
 body {
     line-height: 1.5;
 }
+
+details > summary {
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 0.2em 0.5em;
+}
+
+button {
+    cursor: pointer;
+    color: var(--text);
+    background-color: var(--bg-secondary);
+    font-size: 0.9em;
+    text-align: center;
+    padding: 0.5em 0.8em;
+    border: 1px var(--text) solid;
+    border-radius: 0.5em;
+}
+button:hover {
+    filter: brightness(90%);
+}

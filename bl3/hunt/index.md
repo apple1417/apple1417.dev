@@ -8,12 +8,6 @@ description: >-
 details {
   font-size: 0.85em;
 }
-details > summary {
-  cursor: pointer;
-  border: 1px solid;
-  border-radius: 5px;
-  padding: 0.2em 0.5em;
-}
 </style>
 
 # Improved BL3 Hunt Rules v3.2
@@ -25,6 +19,11 @@ starting from a new character.
 
 [Google Sheet](https://docs.google.com/spreadsheets/d/1wwxGn2XY14qtANYcWDdREvZQzHU5c7_EGNXUQTjgW_o/edit?usp=sharing)
 (note: not fully functional in Excel)
+
+<button type="button"
+        onclick="document.querySelectorAll('details').forEach(d => d.hidden = !d.hidden)">
+  Toggle Justification Blocks
+</button> 
 
 ---
 
