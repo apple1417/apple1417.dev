@@ -1,9 +1,12 @@
 ---
-description: Improved rules for the BL3 Hunt.
+title: Improved BL3 Hunt Rules.
+description: >-
+  Improved rules for the BL3 Hunt, which have actually been playtested, and which have full
+  justifications for each point.
 ---
 <style>
 details {
-  font-size: 0.9em;
+  font-size: 0.85em;
 }
 details > summary {
   cursor: pointer;
@@ -13,7 +16,7 @@ details > summary {
 }
 </style>
 
-# Improved BL3 Hunt Rules v3.1
+# Improved BL3 Hunt Rules v3.2
 
 The Hunt is a competition where players race to collect all unique items in a Borderlands game
 starting from a new character.
@@ -28,7 +31,6 @@ starting from a new character.
 ## Basic Rules
 
 The hunt will run for exactly two weeks, aligned with the weekly vault card challenge reset.
-
 <details markdown="1">
   <summary>Justification</summary>
   An average completion takes approximately 60h. Taking an average 8h/day of sleep and 8h/weekday of
@@ -46,7 +48,6 @@ The hunt will run for exactly two weeks, aligned with the weekly vault card chal
 </details>
 
 Your entire run must be streamed live.
-
 <details markdown="1">
   <summary>Justification</summary>
   This makes it possible to verify that you followed all rules.
@@ -54,14 +55,11 @@ Your entire run must be streamed live.
   You may of course ignore this when playing along casually.
 </details>
 
-Players are ranked by progression first and character time second.
-
+Players are ranked by progression first and character time second. If two players have the same
+progression, the one with less character time is ranked higher. If one player has 20h more character
+time, but managed to get a single extra item, they're still ranked higher.
 <details markdown="1">
   <summary>Justification</summary>
-  If two players have the same progression, the one with less character time is ranked higher. If
-  one player has 20h more character time, but managed to get one extra item, they're still ranked
-  higher.
-  
   The reason for progression first should be obvious - the whole point of the competition is to try
   get as many items as possible. The amount of time it takes is the next thing to rank by, the
   person with the best route (or best luck) should win. Progression ties are expected, we
@@ -91,7 +89,6 @@ Players are ranked by progression first and character time second.
 </details>
 
 There are no playtime restrictions, play however much is comfortable.
-
 <details markdown="1">
   <summary>Justification</summary>
   Using character time simply means there's no need for restrictions. There's just no benefit to
@@ -100,7 +97,6 @@ There are no playtime restrictions, play however much is comfortable.
 </details>
 
 You may not dashboard/read-only farm.
-
 <details markdown="1">
   <summary>Justification</summary>
   Doing this also resets your character time, hiding any time you spent on failed attempts.
@@ -115,7 +111,6 @@ must take the following steps:
 PC players can (and are recommended to) track their character time while in game using LiveSplit,
 which will reveal when the timer is incorrectly paused. As it's inevitable that people will make
 mistakes, top times may have their Arms Race segments retimed.
-
 <details markdown="1">
   <summary>Justification</summary>
   This is the unfortunate downside of using character time - Gearbox is bad and broke the timer
@@ -128,22 +123,24 @@ mistakes, top times may have their Arms Race segments retimed.
   switching to stream time in general (more stressful as discussed above).
 </details>
 
-You must play on the latest version of the game, with the latest hotfixes. The only mod you're
-allowed to use is the Hunt Tracker, linked at the top of the page (and the SDK supporting it).
-
+You must play on the latest version of the game, with the latest hotfixes. The only mods you're
+allowed to use are the Hunt Tracker linked at the top of the page (and the SDK supporting it), and
+DXVK or VKD3D.
 <details markdown="1">
   <summary>Justification</summary>
   These should mostly go without saying. We want everyone to be playing though the same game, mods
-  and older game versions.
+  and older game versions may completely change things. While some mods may have no effect, we
+  cannot be expected to exhaustively validate this, so it's better to enforce a blanket ban.
   
-  While some mods may have no effect, we cannot be expected to exhaustively validate this, so it's
-  better to enforce a blanket ban. The Hunt Tracker was explicitly designed for this competition,
-  and as a single mod can be easily validated, so it is allowed.
+  The Hunt Tracker was explicitly designed for this competition, so is of course allowed.
+  
+  DXVK and VKD3D may help with performance issues, and are widly used and known to not interfere, so
+  are also allowed. Anyone playing on Linux under Proton will already implicitly be using one of
+  these, we might as well explicitly allow it for Windows users as well.
 </details>
 
 You may not save/profile edit your characters during the competition. Exceptions may be made if you
 hardlock, and stream the entire process of recovering your save.
-
 <details markdown="1">
   <summary>Justification</summary>
   Again, this should go without saying, save editing skips through content, you have to you collect
@@ -212,7 +209,6 @@ to those who've save edited them to insane levels:
 - Vault Cards - You may not redeem any items, or even just open the chests you get for completing
   levels (as these can give eridium).
 - Golden and Diamond Keys - You may not spend either.
-
 <details markdown="1">
   <summary>Justification</summary>
   I kind of gave it already, each of these give big advantages to people who've played before. We
@@ -222,7 +218,6 @@ to those who've save edited them to insane levels:
 </details>
 
 You may complete vault card daily/weekly challenges, and collect their xp and eridium rewards.
-
 <details markdown="1">
   <summary>Justification</summary>
   Ideally, these would be banned, as they introduce outside influence. Even with two separate
@@ -308,4 +303,273 @@ than a new player.
   Kind of said it all already, we want to allow coop, but we want to prevent power leveling. Some
   level variation between players is natural, so we arbitrarily limit it to a max of 3. This value
   has not been play tested, a different number may be more suitable.
+</details>
+
+## Drops
+The list of required items has been completely overhauled, and is now automatically generated from
+game data. Use the sheet or the tracker mod to view it in it's entirety.
+
+You must collect all items which have a unique Item Balance, and meet one of the following criteria:
+- They have an enemy drop as their dedicated source.
+  - Except for those from Vincent, who does not respawn.
+- They can only be obtained from world drops.
+- They are from Arms Race.
+
+<details markdown="1">
+  <summary>Justification</summary>
+  This is going to be a bit of a long one.
+  
+### Scripts
+  Firstly, you can see the scripts used to generate the list
+  [here](https://github.com/apple1417/gen_uniques_db/) and
+  [here](https://github.com/apple1417/oak-sdk-mods/tree/master/hunt/generate_db). Note these scripts
+  contain decent amounts of "data massaging", manual hardcoded fixups for specific situations - for
+  example there's a massive list of non-unique items to ignore. The scripts exist to make sure
+  nothing is missed, not to completely avoid all human input.
+  
+### What counts as a unique item?
+  The next point to discuss is what exactly counts as a separate item, we're using the *Item
+  Balance*. In any situation where the game needs to roll an item, it finds the relevant *Item
+  Pool*, which is a list of balances, and picks one at random. Once it has a balance, it looks
+  through the data on it to determine how to roll parts. By saying we're using the balance to
+  distinguish items, we're essentially just saying we don't care about what parts roll.
+  
+  Now while this seems simple enough, there are of course some exceptions which may make it a more
+  controversial decision. The single balance:
+  ```
+  /Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/TheWave/Balance/Balance_SG_JAK_Unique_Wave.Balance_SG_JAK_Unique_Wave
+  ```
+  Can, based on parts, drop with one of the following titles:
+  - T.K's Wave
+  - T.K's Heatwave
+  - T.K's Shockwave
+  - The Tidal Wave
+  
+  So why not count those as 4 separate items you need to get? Well if we're just going off of the,
+  title, that would mean the `Shredifier` and `Super Shredifier` are two separate items, as are the
+  `Sickle` and `Boom Sickle`, or the `Dark Army`, `Exceptional Dark Army`, and
+  `Exceptional Dark Army +`. These are not prefixes/suffixes, these are the full title. This is the
+  case anywhere in the item list where multiple item name are listed, separated by slashes. So what
+  about red text? Well the King and Queen's Call have the exact same red text. Requiring you farm
+  for specific parts is just extra mindless busywork - and some of them, like the Super Shredifier,
+  are very rare to begin with. We might as well require getting a CMT. The only meaningful way to
+  distinguish items is to use the balance, just as the game does when picking a drop.
+  
+  Now on the other end, there's also a case where using the balance adds extra items - the Company
+  Man. Each manufacturer has it's own unique balance - and it's own set of primary stat bonuses.
+  They are for all intents and purposes, completely separate items, just with a shared name, so we
+  treat them as such. Additionally, play testing has shown requiring them makes Hemo more
+  interesting. If you only needed a single variant, it's possible to finish Hemo in just two kills,
+  whereas it takes an average of 25.46 Company Man drops to collect each variant (the Coupon
+  collector's problem). This leads to decisions such as weighing the more drops per kill at high
+  mayhem levels, against the quicker kill speed at lower levels, or the need to spend eridium vs
+  being able to bleed out with Vermi still alive. In an optimized run, Hemo will tend to be last (so
+  you can collect eridium throughout the rest of the competition), so this also means Hemo becomes a
+  boss rush at the very end of the run, which just feels appropriate.
+  
+  The final point to discuss is the unique Artifacts/COMs which world drop. Originally, it was only
+  possible to get these items via world drop, but Gearbox later patched in dedicated sources. The
+  world drops use a single combined balance, which we'd normally all count as a single item, but the
+  new dedicated drops each use dedicated balances, which we'd count separately. Since it's
+  impossible to distinguish them in game (you could get a world drop from the dedicated source), we
+  count them as separate items, as if they were all the dedicated balance, and let you redeem the
+  generic balance as if it were the dedicated one it rolled as.
+
+### Which items should be required?
+  So with the list of distinct items decided on, the next thing is to decide which of them to
+  actually count. Obviously, we remove items with no valid sources, including those we previously
+  banned like the diamond chest or vault cards. We then remove mission items: requiring them
+  essentially adds 100%ing on top of the reset of the run, making the competition even longer;
+  they're no challenge to get, they're just given to you freely; and there are some missions where
+  you have a choice, and you'd need a second playthough to get all.
+  
+  Coming at this from the other end, we obviously want to include all items which can drop from an
+  enemy, the whole point of the competition is to farm them to get their drops. Vincent is the only
+  case where a non-respawnable enemy has a unique drop, and even though he's guaranteed to drop the
+  Initative, we exclude him since missing your one shot requires a whole second playthough. We then
+  add all items which are only obtainable from world drops, since that's still a drop you can farm
+  for. Finally, we add the Arms Race drops, mostly on a technicality - Harker does not have any of
+  them as a dedicated drop, he simply world drops at a higher rate, but they each have a dedicated
+  source in their chest room, so they don't count as items only obtainable from world drops.
+
+  Now this leaves us with a small handful of leftovers, which we can sort into a few categories.
+
+  **Pay to win:**
+  - Cheddar Shredder
+  - Deluxe Badass Combustor
+  - Diamond Butt Bomb
+  - Girth Blaster Elite
+  - Hyper-Hydrator
+  - Ultraball
+  
+  Like the category name suggests, you pay, and then you immediately get these items for no effort,
+  so there's no sense in requiring them.
+  
+  **Completionism:**
+  - Bekah
+  - Ember's Purge
+  - Miss Moxxi's Vibra-Pulse
+  - Scoville
+  
+  **In world interactions:**
+  - Burning Summit
+  - Crit
+  - Hail
+  - Kaleidoscope
+  
+  Play testing has simply shown both of these categories aren't fun. Some of them are completely
+  free to get along the way, others are super tedious. None of these items are a traditional "kill
+  enemy and get drop", only the Kaleidoscope even drops in-world, so it's simply not worth adding
+  complexity to the rules for items which are just boring. Additionally, if you're unlucky you might
+  not even get the Vibra-Pulse on a character, there's no guarantee, which'd require a whole second
+  run to end game, so we'd have to remove it anyway. 
+</details>
+
+The point value of each item has also been completely overhauled. Each item's value roughly
+corresponds to the effort required to get it.
+<details markdown="1">
+  <summary>Justification</summary>
+  Quite simply put, if an item's harder to get, it should be worth more, rather than simply being
+  worth more due to falling in some arbitrary category. The Hot Drop is a blue launcher with a 3%
+  drop rate, while the Ion Cannon is a guaranteed legendary launcher - the Hot Drop should be worth
+  far more.
+  
+  The new point values have been put together through much play testing. The exact values are
+  subjective, and they are *not* just a perfect proxy of drop rate. The rough process for coming to
+  these values was follows:
+  1. Start with 5 points.
+  2. If an item drops more commonly, roughly divide it by how much more common it is - e.g.
+     Blue/Pink Power Troopers are 2 enemies, so their items are only worth 3 points, while
+     Black/Yellow/Red are 3, so their items are only worth 2. Note some enemies (e.g. the Crawlies)
+     already have lower drop rates, so don't have their points affected.
+  3. If an enemy takes a while to get to (Trials, Takedowns), add a point or two to their drops.
+  4. Subjectively add and remove extra points for particularly rare or common items.
+  5. The final value of each item is the lowest of each of it's sources - just because you can get a
+     Sand Hawk from Scourge doesn't mean you're not an idiot for not just getting it from Katagawa.
+  
+  It's worth noting mayhem restrictions have absolutely no impact on the point value. Any decent
+  endgame build will have no trouble handling mayhem levels, how lucky you get has a far larger
+  impact on the total time spent, so there's no point handing out extra points for it.
+</details>
+
+To have proof of a drop, you must look at the item card and clip it. You may also grab the item and
+show it off in your inventory. You may use photo mode to grab items which are normally out of reach.
+
+When using the tracker mod, a clip of it's notification is sufficient. Note it triggers at the start
+of the item card appear animation, so it may appear to trigger without viewing the card when quickly
+flicking over items. However, in order for it to have triggered, you must still have gotten close
+enough for the card to start appearing.
+<details markdown="1">
+  <summary>Justification</summary>
+  Too many items look alike in order to be able to trust just seeing them on screen. With enough
+  practice, you can learn how to distinguish them, however we cannot expect an average player to be
+  able to do so. Viewing the item card ensures everyone is always aware of exactly what the item is.
+</details>
+
+When you get an item to drop from one of it's listed dedicated sources, you may redeem that item.
+Getting an item to world drop off one of it's dedicated sources (if you can tell the difference)
+counts the same as getting it through the dedicated drop. Items found in Arms Race do not need to be
+extracted to count, as long as they follow all other rules.
+<details markdown="1">
+  <summary>Justification</summary>
+  This is mostly common sense - you have to get the item from it's listed dedicated sources.
+  
+  In a lot of scenarios, you cannot tell the difference between getting a dedicated drop, or getting
+  a world drop from the dedicated source - so we simply allow both. The most common way to tell is
+  when you get two dedicated drops at the same time, allowing both is a nice bonus for getting lucky
+  in this case.
+  
+  Extracting Arms Race drops is extra unnecessary busywork - the hard part is getting the item, not
+  running to an extractor afterwards, so we simply don't require it.
+</details>
+
+You start the run with one World Drop Token. Finishing the final campaign quests unlocks a certain
+amount of extra tokens. You may complete these quests multiple times by (re)starting TVHM or
+creating new characters, they're worth more on subsequent completions than on the first.
+
+Quest                                    | First | Subsequent
+:----------------------------------------|------:|-----------:
+Divine Retribution                       |   2   |     20
+All Bets Off                             |   1   |      7
+The Call of Gythian                      |   1   |      7
+Riding to Ruin                           |   1   |      5
+Locus of Rage                            |   1   |      5
+Mysteriouslier: Horror at Scryer's Crypt |   1   |      3
+
+At any point, you may spend a World Drop Token to redeem an item from a world drop (or any source
+not listed as a dedicated source for it). This cannot be done retroactively, you must have the
+token available before finding the drop, and once a token's been spent you can't change your mind it
+and redeem it from a dedicated drop instead. 
+
+<details markdown="1">
+  <summary>Justification</summary>
+  While there are too many world drops to allow redeeming every single one, allowing a few in leads
+  to more interesting routes. Never allowing any world drops means there's a single, static, best
+  route. If you can redeem some, it suddenly becomes a lot more dynamic, there's some on the fly
+  routing, if you get the right combination of world drops you can skip entire areas.
+  
+  This is the third iteration of the "some world drops are allowed" rule, and it's turned out to
+  work quite well in play testing. Awarding more tokens for completing campaigns incentives
+  completing them - and more points for subsequent campaigns is an extra incentive to try help
+  balance out creating extra characters. You start out with a single token, since it's disappointing
+  to find a useful world drop in your initial playthrough, before completing anything, and not be
+  able to redeem it.
+  
+  We don't allow retroactive redeems, and we don't allow changing redeems, as this removes all risk.
+  The optimal strategy becomes recording every single world drop you ever get, and at the end of
+  the run swapping your last N items to be from those world drops. By restricting it, every time you
+  redeem a world drop there's a slight risk, "will I get the other items from this enemy before
+  getting it as a duplicate", you actually have to strategise.
+  
+  One nice side effect of this system is we also don't need to carve out extra rules for cases like
+  the Slaughter Star bosses, which keeps the rules simpler. You can either risk losing your drops to
+  the void, or you can spend a few of your tokens to completely bypass it. We can expect every run
+  to obtain at least 8, from one full playthrough, which is more than enough to cover this while
+  still leaving plenty of room for other interesting routing.
+</details>
+
+Items from the Eridian Fabricator, mail, slot machines, vendors (including Earl's), the dedicated
+loot rooms, event rewards, and mission rewards all simply count as world drops, you need to use
+World Drop Tokens to redeem them. Items found in vendors do not need to be purchased to count.
+<details markdown="1">
+  <summary>Justification</summary>
+  This grealy simplifies the rules: it's either explicitly a drop from one of the dedicated sources,
+  or you use a token. No exceptions.
+  
+  We don't require purchasing items in vendors since money isn't really an obstacle, requiring it
+  adds complexity for no real benefit. It's difficult to find a useful item in a vendor to begin
+  with, so this doesn't have a big impact on the run.
+</details>
+  
+Regardess of if you intend to redeem the items, you may not do any tricks that completely skip the
+work done to access a loot source. This is defined exhaustively as:
+- You may not photo mode to collect the items in the Bounty of Blood Bank multiple times, or to
+  collect them before the final story mission when it normally opens - you must play through the DLC
+  another time get another chance.
+- You may not refresh Vaulthalla by leaving and coming back, you must kill Psychoreaver once per
+  farm.
+- You may not SQ before reviving Eista during "We Slass! (Part 3)" to farm his drops, you must fight
+  him once per farm.
+
+Anything not listed is ok - for example, in Arms Race you *are* allowed to photo mode exit clip to
+collect loot from chests without finishing their arenas.
+<details markdown="1">
+  <summary>Justification</summary>
+  These tricks kind of break the spirit of the challenge, they provide a lot of legendaries for zero
+  effort. If there were allowed, they become the single best way to gear up - and a very useful way
+  to farm world drops to use your last tokens on.
+  
+  The given list is exhaustive, because this kind of trick is very "I know it when I see it" - and
+  fuzzy inexact rules have no place in any competition.
+  
+  Arms race is explicitly given as an allowed example since it's something that appears similar to
+  the others, like it might be something missed from the list. It however has a far smaller impact.
+  You can only photo mode exit clip the chests in the Plunderdome and Seepage and Creepage, and one
+  of the chests in Shipping Encouraged. In the former two areas, you're actively under attack while
+  you try do the clip, it's not completely free, and the parkour out of Plunderdome early isn't the
+  easiest either. None of the three rooms have one of the COMs, so doing it doesn't impact the
+  actual long Arms Race farm either, so it's simply not worth adding extra complcity to the rules to
+  avoid it. In fact, allowing it adds some interesting variety to Arms Race - having a few regions
+  you can clear quicker adds some interesting decisions each run, you might pop into a room you
+  wouldn't normally if had to do a full clear.
 </details>
