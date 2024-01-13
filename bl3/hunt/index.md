@@ -573,3 +573,160 @@ collect loot from chests without finishing their arenas.
   you can clear quicker adds some interesting decisions each run, you might pop into a room you
   wouldn't normally if had to do a full clear.
 </details>
+
+## Glitches
+You may not abuse Complex Root AoE Boosting. You may use a root without any AoE buffs, or AoE buffs
+on other guns (even ones which double dip), just not both at the same time.
+<details markdown="1">
+  <summary>Justification</summary>
+  Does this need explanation? It's the single most powerful build in the game, based on a rather
+  obvious glitch, and it causes large flashing lights which will prevent anyone photo sensitive from
+  watching. It's also allegedly not possible on the PS5 or Series X versions.
+</details>
+  
+You may not Emote Cancel the Pestilence, Multitap, and Gargoyle reloads. You may Emote Cancel in any
+other situation.
+<details markdown="1">
+  <summary>Justification</summary>
+  An obvious glitch, which if allowed would be the most powerful build in the run. It's also not
+  possible, at least not to the same effectiveness, on console/controller.
+  
+  Other forms of emote cancelling, such as cancelling the slam animation, are mostly harmless, and
+  hard to get out of muscle memory once you've started.
+</details>
+
+You may not use the infinite Re-Volter or Toboggan duration glitches.
+<details markdown="1">
+  <summary>Justification</summary>
+  An obvious glitch, which can be added to any other build with zero effort to get a massive free
+  damage boost.
+</details>
+
+You may not use the projected shield or Beskar "invulnerability" glitches.
+<details markdown="1">
+  <summary>Justification</summary>
+  While not true invulnerability, both of these are obvious glitches, which in the right
+  circumstances allow you to just sit there and grind through M10 bosses without a care. If allowed,
+  they become the single best way to deal with these bosses.
+</details>
+
+You may not abuse infinite Phalanx Doctrine or MNTIS Action skill active stacking. Accidentally
+getting an extra stack is ok as long as you SQ once you notice.
+<details markdown="1">
+  <summary>Justification</summary>
+  These are both obvious infinite stacking glitches. While not useful during farming, since SQs will
+  reset them, they can be abused to great effect while working through the story.
+</details>
+
+You may not Car Warp.
+<details markdown="1">
+  <summary>Justification</summary>
+  Gearbox only patched the simple method, it's still possible in coop by spawning a car on the same
+  frame as the level transition countdown ends. This makes it a lot more difficult, and requires
+  other players, but it could save hours if you manage to get it on Wotan. We want solo players to
+  be able to compete without missing out on any large advantage like this. It's also yet again, a
+  very obvious glitch.
+</details>
+
+You may not Skill Point Dupe.
+<details markdown="1">
+  <summary>Justification</summary>
+  Similarly to above this requires other players, and it's of course an extremely obvious glitch,
+  which is difficult to pull off, and creates single best but boring build.
+</details>
+
+You may not use Dakka Bear to charge crystals in guardian takedown, or to skip Scourge's teleport
+phases.
+<details markdown="1">
+  <summary>Justification</summary>
+  These are a bit less egregious than the others, but they still saves a decent amount of time off
+  of something that's a relatively obvious glitch, and is only possible on one character. We don't
+  want a glitch to make a single character the obvious best.
+  
+  Note that in coop the crystals take longer to charge, two people charging simultaneously is
+  different to Dakka Bear + 1 Player.
+</details>
+
+Anything not listed above is allowed.
+<details markdown="1">
+  <summary>Justification</summary>
+  There is no place for inexact rules in any competition. If something new is discovered, it should
+  be explicitly added to the above list, banning things based on "you know it when you see it" is
+  just plain wrong.
+</details>
+
+You *are* allowed to swap reload.
+<details markdown="1">
+  <summary>Justification</summary>
+  This is very similar to drop reloading from BL2, a small glitch sure, but it doesn't have a
+  particularly large impact, and is *extremely* difficult to get out of muscle memory once you start
+  doing it. We're obviously not going to invalidate someone's run if they accidentally do it - so
+  what's the point in banning it?
+  
+  Note banning swap reloading does not prevent Cold Bore abuse - you just end up quick swapping
+  after reloading normally. It's also possible to swap reload on controller by only equipping two
+  weapons and using the "swap to last" button.
+</details>
+
+You *are* allowed to go out of bounds, anywhere.
+<details markdown="1">
+  <summary>Justification</summary>
+  You simply cannot draw a line beyond "I know it when I see it" - which has no place in a
+  competition rule set. There are out of bound sequences which never clip through a wall, and there
+  are areas entirely in bounds where you can easily accidentally walk straight through one. Or there
+  are places you're clearly meant to go which are not displayed on the map, and there are places on
+  the map you cannot reach. Additionally, the total impact of OOB sequences is hillariously minor,
+  they save less than 5 minutes total across the entire competition - though there being no valid
+  way to define the rule means this doesn't even need to be considered.
+</details>
+
+You *are* allowed to Rocket or Grenade Jump.
+<details markdown="1">
+  <summary>Justification</summary>
+  This kind of leads on directly from the last point, since you don't generally use these tricks
+  outside of going out of bounds. If we're not banning out of bounds, there's no real reason to ban
+  these.
+  
+  There's also problems in drawing a line this case - an enemy shooting a rocket at your feet will
+  knock you back, causing an accidental rocket jump, and obviously we don't want that to invalidate
+  your run.
+</details>
+
+You *are* allowed to action skill cancel.
+<details markdown="1">
+  <summary>Justification</summary>
+  Half of this falls under "you are allowed to emote cancel". Since the scroll abuse got patched,
+  this doesn't really have much of an impact - like yes Zane can keep his kill skills up
+  permanently, but he could already, or we don't really care if you skip half of an animation.
+</details>
+ 
+You *are* allowed to respawn enemies by hitting certain triggers or dying/fast traveling. Known
+examples include (non-exhaustive):
+- Rampager
+- Slaughter Bosses
+- Scraptraps
+- Tom and Xam
+- Seer
+- The Cartels Minibosses
+<details markdown="1">
+  <summary>Justification</summary>
+  These are all obviously minor glitches, but you still need to fight the enemies again to get
+  another drop, it's not free. More importantly, they all avoid extra loading screens, which is
+  greatly appreciated.
+</details>
+
+You *are* allowed to stack melee elements to dupe eridium.
+<details markdown="1">
+  <summary>Justification</summary>
+  This takes a bit of effort to set up, and needs you to actively search for eridium piles. It also
+  ends up being the fastest way to gain eridium in a lot of cases, so it helps speed up the boring
+  farming if you run out while rerolling or going for Hemo kills.
+</details>
+
+You *are* allowed to stack elemental resistances and an adaptive shield to get elemental immunity.
+<details markdown="1">
+  <summary>Justification</summary>
+  This isn't really a glitch, you're just stacking bonuses, we wouldn't ban a Zane from stacking too
+  much speed. It also takes quite a bit of specific gear to setup, and ends up a lot more restricted
+  than the previously discussed invulnerability glitches.
+</details>
