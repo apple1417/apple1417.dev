@@ -30,7 +30,7 @@ starting from a new character.
 ## Basic Rules
 
 The hunt will run for exactly two weeks, aligned with the weekly vault card challenge reset.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   An average completion takes approximately 60h. Taking an average 8h/day of sleep and 8h/weekday of
   work, there's only 72h of free time in a week - creating a quite tight margin. To allow an average
@@ -47,7 +47,7 @@ The hunt will run for exactly two weeks, aligned with the weekly vault card chal
 </details>
 
 Your entire run must be streamed live.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   This makes it possible to verify that you followed all rules.
 
@@ -57,7 +57,7 @@ Your entire run must be streamed live.
 Players are ranked by progression first and character time second. If two players have the same
 progression, the one with less character time is ranked higher. If one player has 20h more character
 time, but managed to get a single extra item, they're still ranked higher.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   The reason for progression first should be obvious - the whole point of the competition is to try
   get as many items as possible. The amount of time it takes is the next thing to rank by, the
@@ -88,7 +88,7 @@ time, but managed to get a single extra item, they're still ranked higher.
 </details>
 
 There are no playtime restrictions, play however much is comfortable.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   Using character time simply means there's no need for restrictions. There's just no benefit to
   playing longer - in fact you could argue it explicitly hurts, fatigue leads to mistakes which cost
@@ -96,7 +96,7 @@ There are no playtime restrictions, play however much is comfortable.
 </details>
 
 You may not dashboard/read-only farm.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   Doing this also resets your character time, hiding any time you spent on failed attempts.
 </details>
@@ -110,7 +110,7 @@ must take the following steps:
 PC players can (and are recommended to) track their character time while in game using LiveSplit,
 which will reveal when the timer is incorrectly paused. As it's inevitable that people will make
 mistakes, top times may have their Arms Race segments retimed.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   This is the unfortunate downside of using character time - Gearbox is bad and broke the timer
   half the time. Arms Race takes a significant portion of the run, and includes the rarest items in
@@ -125,7 +125,7 @@ mistakes, top times may have their Arms Race segments retimed.
 You must play on the latest version of the game, with the latest hotfixes. The only mods you're
 allowed to use are the Hunt Tracker linked at the top of the page (and the SDK supporting it), and
 DXVK or VKD3D.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   These should mostly go without saying. We want everyone to be playing though the same game, mods
   and older game versions may completely change things. While some mods may have no effect, we
@@ -140,7 +140,7 @@ DXVK or VKD3D.
 
 You may not save/profile edit your characters during the competition. Exceptions may be made if you
 hardlock, and stream the entire process of recovering your save.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   Again, this should go without saying, save editing skips through content, you have to you collect
   everything you use legitimately.
@@ -157,7 +157,7 @@ hardlock, and stream the entire process of recovering your save.
 
 All characters you use must be created at level 1 during the competition. You may create multiple
 characters, both progression and playtime are combined between them all.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   The point of the competition is to gather everything starting from a new save - so obviously we
   don't want to allow starting from a level 13 save, or a save you already started on earlier.
@@ -181,7 +181,7 @@ You may only use items you collect on your new characters during the competition
 - Any items in your bank from older characters. As long as you keep careful track of what you put in
   it, you may still use your bank, and if you create multiple characters, you may transfer items
   between them.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   As above, the point is to get everything starting from a new save, so you have to get everything
   new on those saves.
@@ -191,7 +191,7 @@ You may only use items you collect on your new characters during the competition
 </details>
 
 You must play on Normal difficulty.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   I'll be honest, I don't really have one for this. We want to keep everyone playing at the same
   level, and using easy just kind of feels wrong.
@@ -208,7 +208,7 @@ to those who've save edited them to insane levels:
 - Vault Cards - You may not redeem any items, or even just open the chests you get for completing
   levels (as these can give eridium).
 - Golden and Diamond Keys - You may not spend either.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   I kind of gave it already, each of these give big advantages to people who've played before. We
   want an average person to be able to compete, so we don't want them to immediately be outclassed
@@ -217,7 +217,7 @@ to those who've save edited them to insane levels:
 </details>
 
 You may complete vault card daily/weekly challenges, and collect their xp and eridium rewards.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   Ideally, these would be banned, as they introduce outside influence. Even with two separate
   competitions under the exact same ruleset, technically one of them would have easier challenges,
@@ -237,7 +237,7 @@ You may complete vault card daily/weekly challenges, and collect their xp and er
 </details>
 
 You may not pick up any of the rare spawn missions.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   Which missions are accessible depend on who your friends have recently killed, allowing outside
   influence into your run. While the extra XP is not great, it's a conscious choice to pick these
@@ -246,7 +246,7 @@ You may not pick up any of the rare spawn missions.
 
 The Moxxtail, Pinata, and Badass viewer ECHOcast events must be disabled. You may leave the rare
 chest event and extraction event on.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   The first three events all introduce outside influence into your game, which may provide an unfair
   advantage to those on Twitch over other platforms, and those with more viewers over those with
@@ -257,7 +257,7 @@ chest event and extraction event on.
 </details>
 
 You may not buy any items from Maurice's Black Market.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   As explained later, these items would not be able to be redeemed as drops, but they are still
   banned. The Black Market is simply too easy. In a run where you're constantly farming drops, money
@@ -273,7 +273,7 @@ You may not buy any items from Maurice's Black Market.
 </details>
 
 You may not duplicate items.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   The main thing we're trying to avoid is mass duping and selling off all the duplicates to be able
   to afford an early Crit/Hail during the first visit to Sancturary. This gives coop players a large
@@ -286,7 +286,7 @@ You may not duplicate items.
 </details>
 
 You may farm underleveled enemies with overleved gear.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   It's easy enough to get a build that instantly kills most on level enemies anyway, and most
   enemies you need to farm scale to your level, so it's not worth adding complexity to restrict
@@ -297,7 +297,7 @@ You may play in coop, as long as all players follow all the other rules. There m
 3 levels between the highest and lowest level players in your party, to prevent powerleveling. This
 restriction still applies in Cooperation mode, an endgame build will naturally clear areas easier
 than a new player.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   Kind of said it all already, we want to allow coop, but we want to prevent power leveling. Some
   level variation between players is natural, so we arbitrarily limit it to a max of 3. This value
@@ -314,7 +314,7 @@ You must collect all items which have a unique Item Balance, and meet one of the
 - They can only be obtained from world drops.
 - They are from Arms Race.
 
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   This is going to be a bit of a long one.
   
@@ -426,7 +426,7 @@ You must collect all items which have a unique Item Balance, and meet one of the
 
 The point value of each item has also been completely overhauled. Each item's value roughly
 corresponds to the effort required to get it.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   Quite simply put, if an item's harder to get, it should be worth more, rather than simply being
   worth more due to falling in some arbitrary category. The Hot Drop is a blue launcher with a 3%
@@ -458,7 +458,7 @@ When using the tracker mod, a clip of it's notification is sufficient. Note it t
 of the item card appear animation, so it may appear to trigger without viewing the card when quickly
 flicking over items. However, in order for it to have triggered, you must still have gotten close
 enough for the card to start appearing.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   Too many items look alike in order to be able to trust just seeing them on screen. With enough
   practice, you can learn how to distinguish them, however we cannot expect an average player to be
@@ -469,7 +469,7 @@ When you get an item to drop from one of it's listed dedicated sources, you may 
 Getting an item to world drop off one of it's dedicated sources (if you can tell the difference)
 counts the same as getting it through the dedicated drop. Items found in Arms Race do not need to be
 extracted to count, as long as they follow all other rules.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   This is mostly common sense - you have to get the item from it's listed dedicated sources.
   
@@ -500,7 +500,7 @@ not listed as a dedicated source for it). This cannot be done retroactively, you
 token available before finding the drop, and once a token's been spent you can't change your mind it
 and redeem it from a dedicated drop instead. 
 
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   While there are too many world drops to allow redeeming every single one, allowing a few in leads
   to more interesting routes. Never allowing any world drops means there's a single, static, best
@@ -530,7 +530,7 @@ and redeem it from a dedicated drop instead.
 Items from the Eridian Fabricator, mail, slot machines, vendors (including Earl's), the dedicated
 loot rooms, event rewards, and mission rewards all simply count as world drops, you need to use
 World Drop Tokens to redeem them. Items found in vendors do not need to be purchased to count.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   This grealy simplifies the rules: it's either explicitly a drop from one of the dedicated sources,
   or you use a token. No exceptions.
@@ -552,7 +552,7 @@ work done to access a loot source. This is defined exhaustively as:
 
 Anything not listed is ok - for example, in Arms Race you *are* allowed to photo mode exit clip to
 collect loot from chests without finishing their arenas.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   These tricks kind of break the spirit of the challenge, they provide a lot of legendaries for zero
   effort. If there were allowed, they become the single best way to gear up - and a very useful way
@@ -576,7 +576,7 @@ collect loot from chests without finishing their arenas.
 ## Glitches
 You may not abuse Complex Root AoE Boosting. You may use a root without any AoE buffs, or AoE buffs
 on other guns (even ones which double dip), just not both at the same time.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   Does this need explanation? It's the single most powerful build in the game, based on a rather
   obvious glitch, and it causes large flashing lights which will prevent anyone photo sensitive from
@@ -585,7 +585,7 @@ on other guns (even ones which double dip), just not both at the same time.
   
 You may not Emote Cancel the Pestilence, Multitap, and Gargoyle reloads. You may Emote Cancel in any
 other situation.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   An obvious glitch, which if allowed would be the most powerful build in the run. It's also not
   possible, at least not to the same effectiveness, on console/controller.
@@ -595,14 +595,14 @@ other situation.
 </details>
 
 You may not use the infinite Re-Volter or Toboggan duration glitches.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   An obvious glitch, which can be added to any other build with zero effort to get a massive free
   damage boost.
 </details>
 
 You may not use the projected shield or Beskar "invulnerability" glitches.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   While not true invulnerability, both of these are obvious glitches, which in the right
   circumstances allow you to just sit there and grind through M10 bosses without a care. If allowed,
@@ -611,14 +611,14 @@ You may not use the projected shield or Beskar "invulnerability" glitches.
 
 You may not abuse infinite Phalanx Doctrine or MNTIS Action skill active stacking. Accidentally
 getting an extra stack is ok as long as you SQ once you notice.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   These are both obvious infinite stacking glitches. While not useful during farming, since SQs will
   reset them, they can be abused to great effect while working through the story.
 </details>
 
 You may not Car Warp.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   Gearbox only patched the simple method, it's still possible in coop by spawning a car on the same
   frame as the level transition countdown ends. This makes it a lot more difficult, and requires
@@ -628,7 +628,7 @@ You may not Car Warp.
 </details>
 
 You may not Skill Point Dupe.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   Similarly to above this requires other players, and it's of course an extremely obvious glitch,
   which is difficult to pull off, and creates single best but boring build.
@@ -636,7 +636,7 @@ You may not Skill Point Dupe.
 
 You may not use Dakka Bear to charge crystals in guardian takedown, or to skip Scourge's teleport
 phases.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   These are a bit less egregious than the others, but they still saves a decent amount of time off
   of something that's a relatively obvious glitch, and is only possible on one character. We don't
@@ -647,7 +647,7 @@ phases.
 </details>
 
 Anything not listed above is allowed.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   There is no place for inexact rules in any competition. If something new is discovered, it should
   be explicitly added to the above list, banning things based on "you know it when you see it" is
@@ -655,7 +655,7 @@ Anything not listed above is allowed.
 </details>
 
 You *are* allowed to swap reload.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   This is very similar to drop reloading from BL2, a small glitch sure, but it doesn't have a
   particularly large impact, and is *extremely* difficult to get out of muscle memory once you start
@@ -668,7 +668,7 @@ You *are* allowed to swap reload.
 </details>
 
 You *are* allowed to go out of bounds, anywhere.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   You simply cannot draw a line beyond "I know it when I see it" - which has no place in a
   competition rule set. There are out of bound sequences which never clip through a wall, and there
@@ -680,7 +680,7 @@ You *are* allowed to go out of bounds, anywhere.
 </details>
 
 You *are* allowed to Rocket or Grenade Jump.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   This kind of leads on directly from the last point, since you don't generally use these tricks
   outside of going out of bounds. If we're not banning out of bounds, there's no real reason to ban
@@ -692,7 +692,7 @@ You *are* allowed to Rocket or Grenade Jump.
 </details>
 
 You *are* allowed to action skill cancel.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   Half of this falls under "you are allowed to emote cancel". Since the scroll abuse got patched,
   this doesn't really have much of an impact - like yes Zane can keep his kill skills up
@@ -707,7 +707,7 @@ examples include (non-exhaustive):
 - Tom and Xam
 - Seer
 - The Cartels Minibosses
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   These are all obviously minor glitches, but you still need to fight the enemies again to get
   another drop, it's not free. More importantly, they all avoid extra loading screens, which is
@@ -715,7 +715,7 @@ examples include (non-exhaustive):
 </details>
 
 You *are* allowed to stack melee elements to dupe eridium.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   This takes a bit of effort to set up, and needs you to actively search for eridium piles. It also
   ends up being the fastest way to gain eridium in a lot of cases, so it helps speed up the boring
@@ -723,7 +723,7 @@ You *are* allowed to stack melee elements to dupe eridium.
 </details>
 
 You *are* allowed to stack elemental resistances and an adaptive shield to get elemental immunity.
-<details markdown="1">
+<details markdown="1" hidden>
   <summary>Justification</summary>
   This isn't really a glitch, you're just stacking bonuses, we wouldn't ban a Zane from stacking too
   much speed. It also takes quite a bit of specific gear to setup, and ends up a lot more restricted
