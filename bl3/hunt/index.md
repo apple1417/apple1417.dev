@@ -148,9 +148,9 @@ hardlock, and stream the entire process of recovering your save.
   That being said, this is a Borderlands game, there are many ways to hardlock. In fact, Vermilingua
   has a very unique hardlock where you can actually finish the quest and move on to the next one,
   but he never respawns (if you SQ before talking to Ma at the end), so you might not even realise 
-  ou've hardlocked until hours later. It'd be remiss to say that one simple mistake like this should
-  ruin your entire run, and it's not always easy to find another player to join to fix your game, so
-  given sufficient explanation we can leave some leniency here.
+  you've hardlocked until hours later. It'd be remiss to say that one simple mistake like this
+  should ruin your entire run, and it's not always easy to find another player to join to fix your
+  game, so given sufficient explanation we can leave some leniency here.
   
   Abusing this by deliberately hardlocking just so that you can save edit ahead is not allowed.
 </details>
@@ -285,12 +285,52 @@ You may not duplicate items.
   requiring extra farming helps balance them out a bit.
 </details>
 
-You may farm underleveled enemies with overleved gear.
+You are allowed to switch between or disable Mayhem Levels at any point, and you may farm
+underleveled enemies with overleved (or mayhem-leveled) gear.
 <details markdown="1" hidden>
   <summary>Justification</summary>
-  It's easy enough to get a build that instantly kills most on level enemies anyway, and most
-  enemies you need to farm scale to your level, so it's not worth adding complexity to restrict
-  this.
+  Firstly let's start off with just switching between Mayhem Levels.
+  
+  Banning going down Mayhem Levels is unacceptable because it becomes way to easy to softlock your
+  run - if you turned your level up beyond what your build can handle, there's no way out. The only
+  bonus you can get by dropping Mayhem Levels is using higher mayhem-leveled gear on lower level
+  enemies - but this only comes out to x2.37 weapon card damage in the most extreme case, plenty of
+  individual skills or items will do more for you build than this. Additionally, banning restricts
+  route creativity, as it essentially forces all optimal routes to do all no/low mayhem content
+  first, then all M4, then all M6. Combining all these, allowing switching between levels at will is
+  just a no brainer.
+  
+  Now allowing turning Mayhem off, and using that to farm underleveled enemies, is a more
+  interesting discussion. This specifically concerns visiting an area once at a low level, then
+  coming back at 72 to farm the low level enemies, the distinction between 72m1 and 72m0 is no
+  different to the above.
+  
+  The first thing to note is that, even with Mayhem off, most of the enemies you need to farm will
+  scale anyway - and as we said 72m0 is fine. Then there's the fact that it's relatively easy to
+  make a build which instantly kills a good number of on level enemies - and we can say there's no
+  real difference between instantly killing 72m1 enemies and 30m0. In a majority of cases, kills on
+  Mayhem 0 practically aren't really any different to those on Mayhem 1.
+  
+  Now this is not to say there's never any benefit to disabling Mayhem. There definitely are still
+  some really impactful enemies which don't scale, e.g. SpongeBoss BulletPants, who has the single
+  largest health pool in the game. These are a minority, but unfortuantly the very fact that they're
+  impactful, and that we're having this discussion, also means that it's impossible to create a
+  clean rule banning them. If we ban disabling Mayhem, then you'll simply level lock and farm them
+  before ever enabling it. If we also require enabling Mayhem as soon as you unlock it, then you
+  just won't finish the main story until later. Ban doing dlcs? There are some enemies you might
+  want to do it to in base game. Are we supposed to force people to speedrun the story, not allowing
+  any side quests, just so that they enable Mayhem as soon possible to avoid this? 
+  
+  The only other option is some sort of level range restriction - "You can't kill enemies more than
+  10 levels below you". But even this is complicated. Does mayhem-leveled gear count towards the
+  range? Since it doesn't award skill points, should count for less? What happens if you're in coop
+  with a few levels between you? Enemy levels are partly randomized, what if just one in a group is
+  out of range? What about half? Not to mention how bad it'd feel to have to give up a farm halfway
+  just because you outleveled it - assuming you even noticed, and didn't accidentally break the
+  rules.
+  
+  Rather than add all this complexity, it's better to simply allow disabling Mayhem at any point,
+  accepting that most of the time it won't really matter.
 </details>
  
 You may play in coop, as long as all players follow all the other rules. There must be no more than
@@ -361,7 +401,7 @@ You must collect all items which have a unique Item Balance, and meet one of the
   interesting. If you only needed a single variant, it's possible to finish Hemo in just two kills,
   whereas it takes an average of 25.46 Company Man drops to collect each variant (the Coupon
   collector's problem). This leads to decisions such as weighing the more drops per kill at high
-  mayhem levels, against the quicker kill speed at lower levels, or the need to spend eridium vs
+  Mayhem Levels, against the quicker kill speed at lower levels, or the need to spend eridium vs
   being able to bleed out with Vermi still alive. In an optimized run, Hemo will tend to be last (so
   you can collect eridium throughout the rest of the competition), so this also means Hemo becomes a
   boss rush at the very end of the run, which just feels appropriate.
@@ -378,7 +418,7 @@ You must collect all items which have a unique Item Balance, and meet one of the
   So with the list of distinct items decided on, the next thing is to decide which of them to
   actually count. Obviously, we remove items with no valid sources, including those we previously
   banned like the diamond chest or vault cards. We then remove mission items: requiring them
-  essentially adds 100%ing on top of the reset of the run, making the competition even longer;
+  essentially adds 100%ing on top of the rest of the run, making the competition even longer;
   they're no challenge to get, they're just given to you freely; and there are some missions where
   you have a choice, and you'd need a second playthough to get all.
   
