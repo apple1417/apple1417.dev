@@ -15,7 +15,7 @@ details {
 The Hunt is a competition where players race to collect all unique items in a Borderlands game
 starting from a new character.
 
-[Tracker Mod (WIP)](https://github.com/apple1417/oak-sdk-mods/tree/hunt-tracker/hunt)
+[Tracker Mod](https://bl-sdk.github.io/oak-mod-db/mods/hunt/)
 
 [Google Sheet](https://docs.google.com/spreadsheets/d/1wwxGn2XY14qtANYcWDdREvZQzHU5c7_EGNXUQTjgW_o/edit?usp=sharing)
 (note: not fully functional in Excel)
