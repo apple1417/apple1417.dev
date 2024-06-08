@@ -78,3 +78,8 @@ button {
 button:hover {
     filter: brightness(90%);
 }
+
+// Remove extra padding from nested quotes
+blockquote blockquote {
+    padding: unset;
+}
