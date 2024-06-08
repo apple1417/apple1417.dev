@@ -32,7 +32,7 @@ Linking using the lib files should then just work. However, I was using CMake to
 different toolchains at once, and could not come up with a way to get it to do this for me - it'd
 just be wrong to require LLVM if you're compiling the rest of the project with MinGW.
 
-So what's my actual solution? Unfortuantly, the best I came up with was just compiling from it as a
+So what's my actual solution? Unfortunately, the best I came up with was just compiling from it as a
 shared library from scratch, and then completely ignoring the dll.
 
 ```cmake
