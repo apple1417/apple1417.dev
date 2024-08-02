@@ -32,7 +32,7 @@ function pick_from_arr(week, arr) {
 let dt = null;
 
 function generate_vendors() {
-    let start_date = $("#start-date")[0].valueAsDate;
+    let start_date = get_picker_date();
     if (start_date == null) {
         return;
     }
@@ -50,6 +50,23 @@ function generate_vendors() {
     dt.clear();
     dt.rows.add(data);
     dt.draw();
+}
+
+// We want the date picker to display in the user's timezone, since all the dates display in it too
+// Unfortuantely, JS is garbage
+// When you assign a date, either via valueAsNumber or valueAsDate, it's set it to the date *in UTC*
+// Manually add the timezone offset to the picker values, to shift the UTC date onto the user's date
+
+const MS_PER_MIN = 60 * 1000;
+function set_picker_date(date) {
+    $("#start-date")[0].valueAsNumber = date.valueOf() - (date.getTimezoneOffset() * MS_PER_MIN);
+}
+function get_picker_date() {
+    let date = $("#start-date")[0].valueAsDate;
+    if (date == null) {
+        return null;
+    }
+    return new Date(date.valueOf() + (date.getTimezoneOffset() * MS_PER_MIN));
 }
 
 $(document).ready(function() {
@@ -82,15 +99,8 @@ $(document).ready(function() {
     });
 
     $("#table-header")[0].prepend($("#date-template")[0].content.cloneNode(true));
-
-    // We want to default to displaying the user's current date
-    // JS is garbage though, so when you assign a date, either via valueAsNumber or valueAsDate, it
-    // sets the picker to that date *in UTC*
-    // Add the timezone offset back in, so that the date in UTC becomes identical to the user's date
-    const now = new Date();
-    $("#start-date")[0].valueAsNumber = now.valueOf() - (now.getTimezoneOffset()*60*1000);
-
     $("#generate-btn").click(generate_vendors);
+    set_picker_date(new Date());
 
     generate_vendors();
 });
