@@ -82,7 +82,14 @@ $(document).ready(function() {
     });
 
     $("#table-header")[0].prepend($("#date-template")[0].content.cloneNode(true));
-    $("#start-date")[0].valueAsDate = new Date();
+
+    // We want to default to displaying the user's current date
+    // JS is garbage though, so when you assign a date, either via valueAsNumber or valueAsDate, it
+    // sets the picker to that date *in UTC*
+    // Add the timezone offset back in, so that the date in UTC becomes identical to the user's date
+    const now = new Date();
+    $("#start-date")[0].valueAsNumber = now.valueOf() - (now.getTimezoneOffset()*60*1000);
+
     $("#generate-btn").click(generate_vendors);
 
     generate_vendors();
