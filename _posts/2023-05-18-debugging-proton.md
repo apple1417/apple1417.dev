@@ -3,6 +3,13 @@ title: Debugging under Proton
 description: How I got a Linux host to compile and debug a dll mod being run under Proton.
 ---
 
+**Update 2024-09-20:**
+Since Proton 9, Valve have added some more offical support/documentation on debugging.
+
+[https://github.com/ValveSoftware/Proton/blob/proton_9.0/docs/DEBUGGING.md](https://github.com/ValveSoftware/Proton/blob/proton_9.0/docs/DEBUGGING.md)
+
+---
+
 For the past few months I've been working on [unrealsdk](https://github.com/bl-sdk/unrealsdk), a C++
 library to interact with Unreal Engine objects, primarily targeting the Borderlands series. One of
 my goals the whole time has been to make sure you can compile it from Linux. I was originally doing
