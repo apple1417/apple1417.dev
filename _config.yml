@@ -13,6 +13,8 @@ exclude:
 title: apple1417.dev
 url: https://apple1417.dev
 
+future: true
+
 twitter:
   card: summary
 

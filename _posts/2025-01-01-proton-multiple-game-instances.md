@@ -2,7 +2,7 @@
 title: Launching multiple game instances under proton.
 ---
 
-Occasionally I need to launch the same game twice under proton. It's a rare enough occurance that I
+Occasionally I need to launch the same game twice under proton. It's a rare enough occurrence that I
 keep forgetting how, so figured it's time to document.
 
 1. Look up the game's steam app id, and the location of it's executable.
