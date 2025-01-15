@@ -1,5 +1,5 @@
 ---
-title: Launching multiple game instances under proton.
+title: Launching multiple game instances under proton
 ---
 
 Occasionally I need to launch the same game twice under proton. It's a rare enough occurrence that I
