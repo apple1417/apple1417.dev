@@ -83,3 +83,20 @@ button:hover {
 blockquote blockquote {
     padding: unset;
 }
+
+// Apply the inline code styling anywhere except a full code block
+code:not(pre code) {
+    background-color: var(--bg-secondary);
+    padding: 0.2rem;
+    color: var(--code-text);
+    font-weight: bold;
+    // Also round the corners a little
+    border-radius: 0.3rem;
+}
+
+h1, h2, h3, h4, h5 {
+    // Code blocks in headers keep the font size from the header
+    code {
+        font-size: revert;
+    }
+}
