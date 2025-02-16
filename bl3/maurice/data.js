@@ -62,8 +62,8 @@ const LOCATIONS = [
     { text: "Tazandeer Ruins", url: "https://i0.wp.com/mentalmars.com/wp-content/uploads/2021/04/Borderlands-3-Black-Market-Location-Map-Week-4.jpg" },
     { text: "Pyre of Stars", url: "https://i0.wp.com/mentalmars.com/wp-content/uploads/2021/09/Borderlands-3-Black-Market-Location-Map-Week-26.jpg" },
     { text: "Pyre of Stars", url: "https://i0.wp.com/mentalmars.com/wp-content/uploads/2021/05/Borderlands-3-Black-Market-Location-Map-Week-9.jpg" },
-    { text: "Desolation's Edge", url: "https://i0.wp.com/mentalmars.com/wp-content/uploads/2021/07/Borderlands-3-Black-Market-Location-Map-Week-48.jpg" },
     { text: "Desolation's Edge", url: "https://i0.wp.com/mentalmars.com/wp-content/uploads/2021/07/Borderlands-3-Black-Market-Location-Map-Week-14.jpg" },
+    { text: "Desolation's Edge", url: "https://i0.wp.com/mentalmars.com/wp-content/uploads/2022/02/Borderlands-3-Black-Market-Location-Map-Week-48.jpg" },
     { text: "Desolation's Edge", url: "https://i0.wp.com/mentalmars.com/wp-content/uploads/2022/03/Borderlands-3-Black-Market-Location-Map-Week-53.jpg" },
 ];
 const POOLS = [
