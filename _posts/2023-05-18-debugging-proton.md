@@ -4,7 +4,7 @@ description: How I got a Linux host to compile and debug a dll mod being run und
 ---
 
 **Update 2024-09-20:**
-Since Proton 9, Valve have added some more offical support/documentation on debugging.
+Since Proton 9, Valve have added some more official support/documentation on debugging.
 
 [https://github.com/ValveSoftware/Proton/blob/proton_9.0/docs/DEBUGGING.md](https://github.com/ValveSoftware/Proton/blob/proton_9.0/docs/DEBUGGING.md)
 
