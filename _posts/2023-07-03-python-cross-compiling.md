@@ -3,6 +3,15 @@ title: Linking against Python when Cross Compiling
 description: How to get all the files out of the Python for Windows installer without running it.
 ---
 
+**Update 2025-12-14:**
+At some point around June 2025, presumably related to [PEP 773](https://peps.python.org/pep-0773/),
+python started hosting `https://www.python.org/ftp/python/<version>/python-<version>-<arch>.zip`
+files, back-added to all versions since 3.11. These hold a full extracted windows install, which
+can replace some of the MSI extraction steps detailed in this post. The "legacy" installers I talk
+about are deprecated, and are set to stop being released at the start of 2027.
+
+---
+
 So I have a Windows executable (or rather a dll), which uses
 [pybind11](https://github.com/pybind/pybind11) to embed a python interpreter. How can I compile this
 from a Linux host? Without just compiling CPython from source, so we don't need to worry about
@@ -74,7 +83,7 @@ the main installer defers to these based on which features are selected. Some of
 `path.msi`, only seem to contain a bunch of commands, while others contain actual files. Guess
 what's in `dev.msi` and `dev_d.msi`? Exactly what we need.
 
-The next problem is extracting them properly. So far, I'd been using 7zip to view inside the msis,
+The next problem is extracting them properly. So far, I'd been using 7zip to view inside the MSIs,
 but it doesn't parse the file name quite right, what it lists as `include_abstract.h` should
 actually be `include/abstract.h`. Luckily, there's an alternative, `msiextract` (part of msitools),
 which can do this properly for us.
