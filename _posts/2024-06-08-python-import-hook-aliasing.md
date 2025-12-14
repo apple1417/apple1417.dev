@@ -1,5 +1,5 @@
 ---
-title: Python Import Hooks and module Aliasing
+title: Python Import Hooks and Module Aliasing
 description: How to use import hooks to create and debug aliased module names
 ---
 
@@ -15,6 +15,13 @@ description: How to use import hooks to create and debug aliased module names
     });
 </script>
 
+**Update 2025-12-14:**
+I've written a [new post]({% link _posts/2025-12-14-python-import-hooks-in-practice.md %}) on
+import hooks, which I think is a better introduction to them. This post still covers some extra
+content more specific to creating module aliases however.
+
+---
+
 It turns out, most of the Python import system is written in Python itself, and is quite
 customizable. There generally isn't much reason to touch these however, so there aren't many
 examples of how to use out there. In this post I'll go over how I tried using import hooks to allow
@@ -24,7 +31,7 @@ This post is written targeting Python 3.12.3, though I wouldn't expect things to
 future versions.
 
 # Background
-I've been working on the [Borderlands 2/TPS Python SDK](https://github.com/bl-sdk/bl2-mod-manager/),
+I've been working on the [Borderlands 2/TPS Python SDK](https://github.com/bl-sdk/willow2-mod-manager/),
 which allows creating mods via python scripts. There are a number of issues with the original
 version, which have necessitated breaking changes to make improvements. But because there are so
 many existing mods, we need a compatibility layer to try keep them running until they're upgraded.
@@ -302,7 +309,7 @@ import Mods.importlib
 
 ..that also works. If you add the `LoggingMetaPathFinder` back, you'll see it tries to import
 `Mods.importlib` with a path of `None` - which means look for a top level module called `importlib`.
-And one of the builtin import hooks finds it before it ever gets to outs.
+And one of the builtin import hooks finds it before it ever gets to ours.
 
 So since we don't actually want to change the import semantics, we just want to add fake packages to
 the chain, it turns out we can just have `__path__` do all the heavy lifting for us.
