@@ -20,13 +20,17 @@ project_entries:
     url: https://github.com/bl-sdk/unrealsdk
     desc: Python bindings and embedded interpreter for unrealsdk.
 
-  - title: BL3 Mod Manager
-    url: https://github.com/bl-sdk/oak-mod-manager
-    desc: Python mod manager and in game mod menu for Borderlands 3 and Wonderlands.
+  - title: Borderlands Python Mod Managers
+    url: https://github.com/bl-sdk/
+    desc: Several mod managers and in-game mod menus, across whole Borderlands series.
 
-  - title: bl2.parts
-    url: https://bl2.parts
-    desc: Parts guides for Borderlands 2 and TPS.
+  - title: Live Object Explorer
+    url: https://https://github.com/apple1417/live_object_explorer
+    desc: Unreal reverse engineering tool, showing object properties in live, interactive, menus.
+
+  - title: BL4 Auto Crypter
+    url: https://https://github.com/apple1417/bl4_auto_crypter
+    desc: Automatic save file encrypter/decrypter, making sharing as easy as previous games.
 
   - title: OpenHotfixLoader
     url: https://github.com/apple1417/OpenHotfixLoader
@@ -35,3 +39,11 @@ project_entries:
   - title: Bagpipe
     url: https://github.com/apple1417/bagpipe
     desc: Universal profile editor for all Borderlands games before 3.
+
+  - title: bl2.parts
+    url: https://bl2.parts
+    desc: Parts guides for Borderlands 2 and TPS.
+
+  - title: Talos Principle PC
+    url: https://youtu.be/XKuAwCJ3khw
+    desc: Basic 8-bit PC implemented in game using connector beam-based logic gates.
