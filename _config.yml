@@ -18,7 +18,7 @@ future: true
 twitter:
   card: summary
 
-remote_theme: abhinavs/moonwalk
+remote_theme: https://github.com/abhinavs/moonwalk@f1491c81fb60b13d79734d15eb798139928d1baf
 
 theme_config:
   appearance: "dark" # can be "light", "dark" or "auto"
