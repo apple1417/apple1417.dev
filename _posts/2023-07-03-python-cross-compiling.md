@@ -10,6 +10,10 @@ files, back-added to all versions since 3.11. These hold a full extracted window
 can replace some of the MSI extraction steps detailed in this post. The "legacy" installers I talk
 about are deprecated, and are set to stop being released at the start of 2027.
 
+**Update 2026-03-2:**
+I wrote a [new post]({% link _posts/2026-03-22-python-cross-compiling.md %}) on how to use the new
+release format - it's a lot nicer than this.
+
 ---
 
 So I have a Windows executable (or rather a dll), which uses
