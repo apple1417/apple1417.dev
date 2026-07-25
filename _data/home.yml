@@ -2,6 +2,9 @@ navbar_entries:
   - title: github
     url: https://github.com/apple1417
 
+  - title: codeberg
+    url: https://codeberg.org/apple1417
+
   - title: twitch
     url: https://twitch.tv/apple1417
 
@@ -37,7 +40,7 @@ project_entries:
     desc: Proxyless Hotfix Injector for Borderlands 3 and Wonderlands.
 
   - title: Bagpipe
-    url: https://github.com/apple1417/bagpipe
+    url: https://codeberg.org/apple1417/bagpipe
     desc: Universal profile editor for all Borderlands games before 3.
 
   - title: bl2.parts
