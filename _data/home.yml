@@ -28,11 +28,11 @@ project_entries:
     desc: Several mod managers and in-game mod menus, across whole Borderlands series.
 
   - title: Live Object Explorer
-    url: https://https://github.com/apple1417/live_object_explorer
+    url: https://github.com/apple1417/live_object_explorer
     desc: Unreal reverse engineering tool, showing object properties in live, interactive, menus.
 
   - title: BL4 Auto Crypter
-    url: https://https://github.com/apple1417/bl4_auto_crypter
+    url: https://github.com/apple1417/bl4_auto_crypter
     desc: Automatic save file encrypter/decrypter, making sharing as easy as previous games.
 
   - title: OpenHotfixLoader
