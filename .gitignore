@@ -2,6 +2,7 @@ _site
 _drafts
 
 .vscode
+.nvim.lua
 
 Gemfile
 Gemfile.lock
